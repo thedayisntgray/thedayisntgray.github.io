@@ -4,18 +4,28 @@ layout: default
 
 {% for post in paginator.posts %}
   <div class="posts-container">
-    <h1>
-      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-    </h1>
-    {% if post.image %}
-      <div class="thumbnail-container">
-        <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
-      </div>
-    {% endif %}
-    <p>
-      {{ post.content | strip_html | truncate: 350 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
-      <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
-    </p>
+    <!-- This logic needs to live somewhere else
+
+      What I want to do is have a seperate page for food and other interests.
+
+      Maybe Ruby, AI , Magic the gathering....
+    
+  
+    -->
+    {% unless post.tags contains 'food' or post.tags contains 'about' %}
+      <h1>
+        <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
+      </h1>
+      {% if post.image %}
+        <div class="thumbnail-container">
+          <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
+        </div>
+      {% endif %}
+      <p>
+        {{ post.content | strip_html | truncate: 350 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
+        <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
+      </p>
+      {% endunless %}
   </div>
 {% endfor %}
 <!-- Pagination links -->
