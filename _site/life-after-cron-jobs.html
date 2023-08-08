@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+  <head>
+  <title>
+    
+      Life after cron job | landon.gray.me
+    
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="landon.gray.me" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="landon.gray.me | stay curious"/>
+  //-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Life after cron job | landon.gray.me</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Life after cron job" />
+<meta name="author" content="Landon Gray" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="One of my new found interests besides ML stuff is Data Engineering." />
+<meta property="og:description" content="One of my new found interests besides ML stuff is Data Engineering." />
+<link rel="canonical" href="http://localhost:4000/life-after-cron-jobs" />
+<meta property="og:url" content="http://localhost:4000/life-after-cron-jobs" />
+<meta property="og:site_name" content="landon.gray.me" />
+<meta property="og:image" content="http://localhost:4000/cron-clock.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-08-08T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/cron-clock.jpg" />
+<meta property="twitter:title" content="Life after cron job" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Landon Gray"},"dateModified":"2023-08-08T00:00:00-04:00","datePublished":"2023-08-08T00:00:00-04:00","description":"One of my new found interests besides ML stuff is Data Engineering.","headline":"Life after cron job","image":"http://localhost:4000/cron-clock.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/life-after-cron-jobs"},"url":"http://localhost:4000/life-after-cron-jobs"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+  <h3 class="header-title">
+    <a href="/">landon.gray.me</a>
+    <small class="header-subtitle">stay curious</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/about.html">About</a>
+    
+      <a href="/writing.html">Writing</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/thedayisntgray" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/thedayisntgray" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/thedayisntgray/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:landon.gray@hey.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+      <div class="content-container">
+        <h1>
+  Life after cron job
+</h1>
+
+  <img src="/assets/img/cron-clock.jpg">
+
+<article>
+  <p>One of my new found interests besides ML stuff is Data Engineering.</p>
+
+<p>One interesting thing I hope to explore more is the way various ways organizations handle scheduling jobs.</p>
+
+<p>Obviously cron is pretty solid initial step, but it doesn’t scale well at all. The frustration cron at scale is that it always runs at a specified time. If a job  runs 1 minute longer than expected it will cause all subsequent dependent jobs to fail (since they are dependent on the task to complete before they run)</p>
+
+<p>Unfortunately to fix such failures costs developer time and effort. Not to mention it could cause un wanted downstream issues in dev, stage and prod environments… OH NO!</p>
+
+<p>So how do we manage these dependencies?</p>
+
+<p>Well to fix these issues we need to better understand the dependencies these jobs have with one another and clearly map them out.</p>
+
+<p>Using <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAGs</a> ( Directed Acyclic Graphs) we can clearly map these dependencies.</p>
+
+<p><img src="/assets/img/example-dag.png" alt="Directed Acyclic Graph example" /></p>
+
+<p><em>Credit Wikipedia</em></p>
+
+<p>Once we are finished, we can then elicit the help of a <strong>Workflow Scheduling Framework</strong> to run the tasks in order as part of a single workflow.</p>
+
+<p>In addition to preventing failures do to long running tasks, the set of task as part of the workflow will run faster since they can run as soon as the dependent task finishes instead of waiting until it’s scheduled time.</p>
+
+<p>3 industry standard workflow management tools that can help us are:
+<a href="https://airflow.apache.org/">Apache Airflow</a> created by Airbnb
+<a href="https://oozie.apache.org/">Oozie</a> (also apache)
+<a href="https://github.com/spotify/luigi">Luigi</a> created by Spotify</p>
+
+<p>This is by no means an exhausive list, there are no doubt many more.</p>
+
+<p>But this should be enough for you to get started. If you happen to have any questions come up feel free to email me 😃</p>
+
+</article>
+
+  <span class="post-date">
+  Written on
+  
+  August
+  8th,
+  2023
+  by
+  
+    Landon Gray
+  
+</span>
+
+
+
+  <div class="post-date">Feel free to share!</div>
+<div class="sharing-icons">
+  <a href="https://twitter.com/intent/tweet?text=Life after cron job&amp;url=/life-after-cron-jobs" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=/life-after-cron-jobs&amp;title=Life after cron job" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+</div>
+
+
+
+  <div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
+
+      </div>
+      <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/thedayisntgray" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/thedayisntgray" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/thedayisntgray/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:landon.gray@hey.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="footer-description"><a href="/">landon.gray.me | stay curious by Landon Gray</a></div>
+</footer>
+
+    </div>
+  </body>
+</html>
