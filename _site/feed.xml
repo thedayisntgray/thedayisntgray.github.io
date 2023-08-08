@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-08T14:02:41-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">landon.gray.me</title><subtitle>stay curious</subtitle><author><name>Landon Gray</name></author><entry><title type="html">Life after cron job</title><link href="http://localhost:4000/life-after-cron-jobs" rel="alternate" type="text/html" title="Life after cron job" /><published>2023-08-08T00:00:00-04:00</published><updated>2023-08-08T00:00:00-04:00</updated><id>http://localhost:4000/life-after-cron-jobs</id><content type="html" xml:base="http://localhost:4000/life-after-cron-jobs"><![CDATA[<p>One of my new found interests besides ML stuff is Data Engineering.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-08T14:17:24-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">landon.gray.me</title><subtitle>stay curious</subtitle><author><name>Landon Gray</name></author><entry><title type="html">Life after cron job</title><link href="http://localhost:4000/life-after-cron-jobs" rel="alternate" type="text/html" title="Life after cron job" /><published>2023-08-08T00:00:00-04:00</published><updated>2023-08-08T00:00:00-04:00</updated><id>http://localhost:4000/life-after-cron-jobs</id><content type="html" xml:base="http://localhost:4000/life-after-cron-jobs"><![CDATA[<p>One of my new found interests besides ML stuff is Data Engineering.</p>
 
 <p>One interesting thing I hope to explore more is the way various ways organizations handle scheduling jobs.</p>
 
-<p>Obviously cron is pretty solid initial step, but it doesn’t scale well at all. The frustration cron at scale is that it always runs at a specified time. If a job  runs 1 minute longer than expected it will cause all subsequent dependent jobs to fail (since they are dependent on the task to complete before they run)</p>
+<p>Obviously <a href="https://en.wikipedia.org/wiki/Cron">cron</a> is a pretty solid initial step, but <a href="https://engblog.nextdoor.com/we-don-t-run-cron-jobs-at-nextdoor-6f7f9cc62040">it doesn’t scale well at all</a>. One frustration with cron at scale is that it always runs at a specified time. If a job  runs 1 minute longer than expected it will cause all subsequent dependent jobs to fail (since they are dependent on the task to complete before they run)</p>
 
-<p>Unfortunately to fix such failures costs developer time and effort. Not to mention it could cause un wanted downstream issues in dev, stage and prod environments… OH NO!</p>
+<p>Unfortunately to fix such failures costs developer time and effort. Not to mention it could cause unwanted downstream issues in dev, stage and prod environments… OH NO!</p>
 
 <p>So how do we manage these dependencies?</p>
 
-<p>Well to fix these issues we need to better understand the dependencies these jobs have with one another and clearly map them out.</p>
+<p>Well, to fix these issues we need to better understand the dependencies these jobs have with one another and clearly map them out.</p>
 
 <p>Using <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAGs</a> ( Directed Acyclic Graphs) we can clearly map these dependencies.</p>
 
@@ -18,12 +18,15 @@
 
 <p>Once we are finished, we can then elicit the help of a <strong>Workflow Scheduling Framework</strong> to run the tasks in order as part of a single workflow.</p>
 
-<p>In addition to preventing failures do to long running tasks, the set of task as part of the workflow will run faster since they can run as soon as the dependent task finishes instead of waiting until it’s scheduled time.</p>
+<p>In addition to preventing failures due to long running tasks, these set of tasks will run faster since they can run as soon as the dependent task finishes instead of waiting until it’s scheduled time.</p>
 
-<p>3 industry standard workflow management tools that can help us are:
-<a href="https://airflow.apache.org/">Apache Airflow</a> created by Airbnb
-<a href="https://oozie.apache.org/">Oozie</a> (also apache)
-<a href="https://github.com/spotify/luigi">Luigi</a> created by Spotify</p>
+<p>3 industry standard workflow management tools that can help us here are:</p>
+
+<ul>
+  <li><a href="https://airflow.apache.org/">Apache Airflow</a> created by Airbnb</li>
+  <li><a href="https://oozie.apache.org/">Oozie</a> (also apache)</li>
+  <li><a href="https://github.com/spotify/luigi">Luigi</a> created by Spotify</li>
+</ul>
 
 <p>This is by no means an exhausive list, there are no doubt many more.</p>
 
@@ -59,4 +62,4 @@
 
 <p>I’m a software engineer and consultant working at Test Double. I enjoy reading, learning new things and contemplating existence among other things.</p>
 
-<p>This blog is a living work in progress and it is an attempt to both own my own piece of the web and consolidate the information I am learning into a tangible artifact that I and others can learn from.</p>]]></content><author><name>Landon Gray</name></author><category term="journal" /><category term="documentation" /><category term="sample" /><summary type="html"><![CDATA[Hey I’m Landon Gray,]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/monkeying-around.png" /><media:content medium="image" url="http://localhost:4000/monkeying-around.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>This blog is a living work in progress and it is an attempt to both own my own piece of the web and consolidate the information I am learning into a tangible artifact that I and others can learn from.</p>]]></content><author><name>Landon Gray</name></author><category term="journal" /><category term="about" /><summary type="html"><![CDATA[Hey I’m Landon Gray,]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/monkeying-around.png" /><media:content medium="image" url="http://localhost:4000/monkeying-around.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -18,7 +18,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/f83e6badff.js" crossorigin="anonymous"></script>
+
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
     MathJax.Hub.Config({
@@ -102,6 +104,11 @@
     <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
   
 
+  
+  
+    <a href="https://www.buymeacoffee.com/thedayisntgray" target="_blank"><i class="fa fa-donate" aria-hidden="true"></i></a>
+  
+
   </nav>
 </div>
 
@@ -120,13 +127,13 @@
 
 <p>One interesting thing I hope to explore more is the way various ways organizations handle scheduling jobs.</p>
 
-<p>Obviously cron is pretty solid initial step, but it doesn’t scale well at all. The frustration cron at scale is that it always runs at a specified time. If a job  runs 1 minute longer than expected it will cause all subsequent dependent jobs to fail (since they are dependent on the task to complete before they run)</p>
+<p>Obviously <a href="https://en.wikipedia.org/wiki/Cron">cron</a> is a pretty solid initial step, but <a href="https://engblog.nextdoor.com/we-don-t-run-cron-jobs-at-nextdoor-6f7f9cc62040">it doesn’t scale well at all</a>. One frustration with cron at scale is that it always runs at a specified time. If a job  runs 1 minute longer than expected it will cause all subsequent dependent jobs to fail (since they are dependent on the task to complete before they run)</p>
 
-<p>Unfortunately to fix such failures costs developer time and effort. Not to mention it could cause un wanted downstream issues in dev, stage and prod environments… OH NO!</p>
+<p>Unfortunately to fix such failures costs developer time and effort. Not to mention it could cause unwanted downstream issues in dev, stage and prod environments… OH NO!</p>
 
 <p>So how do we manage these dependencies?</p>
 
-<p>Well to fix these issues we need to better understand the dependencies these jobs have with one another and clearly map them out.</p>
+<p>Well, to fix these issues we need to better understand the dependencies these jobs have with one another and clearly map them out.</p>
 
 <p>Using <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAGs</a> ( Directed Acyclic Graphs) we can clearly map these dependencies.</p>
 
@@ -136,12 +143,15 @@
 
 <p>Once we are finished, we can then elicit the help of a <strong>Workflow Scheduling Framework</strong> to run the tasks in order as part of a single workflow.</p>
 
-<p>In addition to preventing failures do to long running tasks, the set of task as part of the workflow will run faster since they can run as soon as the dependent task finishes instead of waiting until it’s scheduled time.</p>
+<p>In addition to preventing failures due to long running tasks, these set of tasks will run faster since they can run as soon as the dependent task finishes instead of waiting until it’s scheduled time.</p>
 
-<p>3 industry standard workflow management tools that can help us are:
-<a href="https://airflow.apache.org/">Apache Airflow</a> created by Airbnb
-<a href="https://oozie.apache.org/">Oozie</a> (also apache)
-<a href="https://github.com/spotify/luigi">Luigi</a> created by Spotify</p>
+<p>3 industry standard workflow management tools that can help us here are:</p>
+
+<ul>
+  <li><a href="https://airflow.apache.org/">Apache Airflow</a> created by Airbnb</li>
+  <li><a href="https://oozie.apache.org/">Oozie</a> (also apache)</li>
+  <li><a href="https://github.com/spotify/luigi">Luigi</a> created by Spotify</li>
+</ul>
 
 <p>This is by no means an exhausive list, there are no doubt many more.</p>
 
@@ -213,6 +223,11 @@
   
   
     <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://www.buymeacoffee.com/thedayisntgray" target="_blank"><i class="fa fa-donate" aria-hidden="true"></i></a>
   
 
   <div class="footer-description"><a href="/">landon.gray.me | stay curious by Landon Gray</a></div>
