@@ -21,7 +21,9 @@ Recently, I met a young man in my community. He looked a little rough; he was ho
 
 I gave this man a ride...
 
-Why? Because I saw in this man myself and all the absurdities I've faced and seen in my own life as a Black man in this country. To see him there and to hear his story cut me open inside and made me incredibly angry. My compassion for this man took the form of anger because the injustice done to him did not occur today...no, no...it's been happening since his ancestors and my ancestors stepped off the ship into this unknown land.
+Why? Because I saw in this man myself and all the absurdities I've faced and seen in my own life as a Black man in this country.To see him there and to hear his story cut me open inside and made me incredibly angry.
+
+My compassion for this man took the form of anger because the injustice done to him did not occur today...no, no...it's been happening since his ancestors and my ancestors stepped off the ship into this unknown land.
 
 There is seldom a day that goes by that I am not aware of the injustice that has befallen so many whose stories relate to this man.
 
