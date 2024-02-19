@@ -33,7 +33,10 @@ One cannot be absolved of the wrongdoing one sees without taking some sort of ac
 
 To be conscious while Black in this country is an incredibly burdensome task, as James Baldwin so eloquently describes...
 
-![Conscious while black](/assets/img/to-be-conscious-while-black.png)
+> To be a Negro in this country and to be relatively conscious is to be in a state of rage almost, almost all of the time — and in one's work. And part of the rage is this: It isn't only what is happening to you. But it's what's happening all around you and all of the time in the face of the most extraordinary and criminal indifference, indifference of most white people in this country, and their ignorance. Now, since this is so, it's a great temptation to simplify the issues under the illusion that if you simplify them enough, people will recognize them. I think this illusion is very dangerous because, in fact, it isn't the way it works. A complex thing can't be made simple. You simply have to try to deal with it in all its complexity and hope to get that complexity across. 
+~ <nobr>James Baldwin</nobr>
+
+**Source:** [NPR](https://www.npr.org/2020/06/01/867153918/-to-be-in-a-rage-almost-all-the-time)
 
 And yet, one must be conscious no matter the cost, despite the pain, because of the pain...and it is indeed through remaining conscious and taking action that any hope of alleviating suffering can occur.
 
