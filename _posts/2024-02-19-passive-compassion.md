@@ -13,7 +13,7 @@ Sometimes compassion means getting angry on behalf of someone else and taking a 
 
 If a bully is bullying others on the playground and you "feel bad" about the person being bullied, but choose to do nothing...
 
-**...that is not compassion, you that is passivity.**
+**...that is not compassion, that is passivity.**
 
 Compassion is hard and uncomfortable because real compassion pushes you to take action.
 
