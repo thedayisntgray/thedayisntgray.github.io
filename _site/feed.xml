@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-08T14:17:24-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">landon.gray.me</title><subtitle>stay curious</subtitle><author><name>Landon Gray</name></author><entry><title type="html">Life after cron job</title><link href="http://localhost:4000/life-after-cron-jobs" rel="alternate" type="text/html" title="Life after cron job" /><published>2023-08-08T00:00:00-04:00</published><updated>2023-08-08T00:00:00-04:00</updated><id>http://localhost:4000/life-after-cron-jobs</id><content type="html" xml:base="http://localhost:4000/life-after-cron-jobs"><![CDATA[<p>One of my new found interests besides ML stuff is Data Engineering.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-19T11:34:11-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">landon.gray.me</title><subtitle>stay curious</subtitle><author><name>Landon Gray</name></author><entry><title type="html">Passive Compassion</title><link href="http://localhost:4000/passive-compassion" rel="alternate" type="text/html" title="Passive Compassion" /><published>2024-02-19T00:00:00-05:00</published><updated>2024-02-19T00:00:00-05:00</updated><id>http://localhost:4000/passive-compassion</id><content type="html" xml:base="http://localhost:4000/passive-compassion"><![CDATA[<p>There is nothing worse than passive compassion.</p>
+
+<p>Sometimes compassion means getting angry on behalf of someone else and taking a stand.</p>
+
+<p>If a bully is bullying others on the playground and you “feel bad” about the person being bullied, but choose to do nothing…</p>
+
+<p><strong>…that is not compassion, you that is passivity.</strong></p>
+
+<p>Compassion is hard and uncomfortable because real compassion pushes you to take action.</p>
+
+<p>Recently, I met a young man in my community. He looked a little rough; he was homeless, had a mother on drugs, and told me he had been stabbed several times in the past. His hope, he told me, was that he wouldn’t be strung out on drugs like some members of his family.</p>
+
+<p>I gave this man a ride…</p>
+
+<p>Why? Because I saw in this man myself and all the absurdities I’ve faced and seen in my own life as a Black man in this country. To see him there and to hear his story cut me open inside and made me incredibly angry. My compassion for this man took the form of anger because the injustice done to him did not occur today…no, no…it’s been happening since his ancestors and my ancestors stepped off the ship into this unknown land.</p>
+
+<p>There is seldom a day that goes by that I am not aware of the injustice that has befallen so many whose stories relate to this man.</p>
+
+<p>One cannot be absolved of the wrongdoing one sees without taking some sort of action. It is not enough to just feel for the person who was wronged; you must do something.</p>
+
+<p>Celebrating Black History Month, to me, means remaining conscious and aware of the injustices that have befallen and still fall upon Black bodies. To celebrate Black History Month means acknowledging the wrongs, seeing the progress, and finding productive ways to be angry and to honor the struggle of those who came before me.</p>
+
+<p>To be conscious while Black in this country is an incredibly burdensome task, as James Baldwin so eloquently describes…</p>
+
+<p><img src="/assets/img/to-be-conscious-while-black.png" alt="Conscious while black" /></p>
+
+<p>And yet, one must be conscious no matter the cost, despite the pain, because of the pain…and it is indeed through remaining conscious and taking action that any hope of alleviating suffering can occur.</p>
+
+<p>I am so incredibly grateful to people like Harriet Tubman, Malcolm X, MLK, Aretha Franklin, Ta-Nehisi Coates, James Baldwin, and so many others whose lives have encouraged me to press on, be brave, resist passivity, and to remain steadfast and clear about who I am in this world.</p>
+
+<p>My hope is that one day we as a society will overcome this great sickness of indifference that plagues us now. That we will gather together and affirm our collective desire to see a better world.</p>
+
+<p>This hope is best embodied in the lines of this old Negro spiritual:</p>
+
+<p><a href="https://youtu.be/MgwG802rHng?t=35">We shall overcome, we shall overcome…we shall overcome one day!</a></p>]]></content><author><name>Landon Gray</name></author><category term="compassion" /><summary type="html"><![CDATA[There is nothing worse than passive compassion.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/compassion-needed.png" /><media:content medium="image" url="http://localhost:4000/compassion-needed.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Life after cron job</title><link href="http://localhost:4000/life-after-cron-jobs" rel="alternate" type="text/html" title="Life after cron job" /><published>2023-08-08T00:00:00-04:00</published><updated>2023-08-08T00:00:00-04:00</updated><id>http://localhost:4000/life-after-cron-jobs</id><content type="html" xml:base="http://localhost:4000/life-after-cron-jobs"><![CDATA[<p>One of my new found interests besides ML stuff is Data Engineering.</p>
 
 <p>One interesting thing I hope to explore more is the way various ways organizations handle scheduling jobs.</p>
 
