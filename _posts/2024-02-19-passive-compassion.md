@@ -27,7 +27,9 @@ There is seldom a day that goes by that I am not aware of the injustice that has
 
 One cannot be absolved of the wrongdoing one sees without taking some sort of action. It is not enough to just feel for the person who was wronged; you must do something.
 
-Celebrating Black History Month, to me, means remaining conscious and aware of the injustices that have befallen and still fall upon Black bodies. To celebrate Black History Month means acknowledging the wrongs, seeing the progress, and finding productive ways to be angry and to honor the struggle of those who came before me.
+**Celebrating Black History Month, to me, means remaining conscious and aware of the injustices that have befallen and still fall upon Black bodies.**
+
+**To celebrate Black History Month means acknowledging the wrongs, seeing the progress, and finding productive ways to be angry and to honor the struggle of those who came before me.**
 
 To be conscious while Black in this country is an incredibly burdensome task, as James Baldwin so eloquently describes...
 
