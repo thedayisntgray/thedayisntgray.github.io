@@ -44,15 +44,19 @@ I'd like to write a lot more. I beat up on myself because sometimes I do write, 
 
 But I'm going to try really hard not to care so much about polishing a ton and focus on sharing more.
 
-### Why not roll your own?... 
+### Why not roll your own blog?... 
 
 _this part is mostly for me since I've had a fair amout of anxiety around this_
 
-The last thing I want to say is that over the years, I've been frustrated because I am not a designer. I had this stressor where I was like, "You're a coder, you should roll your own blog and design it yourself." I'm over it. It's such a waste of time to try making your weaknesses into strengths when there are people who are much better than me who create blog themes and platforms.
+There is so much friction to just write and I often found my self doing what developers call [Yak Shaving](https://softwareengineering.stackexchange.com/questions/388092/what-exactly-is-yak-shaving). In my younger years, I would have spent an unhealthy amount of time looking for the perfect blog theme, or worse, trying to design my own theme, only to stress out and abandon blogging altogether.
 
-That doesn't make me any less of an engineer because I choose to pursue other problems rather than stress out about the fact that I hate how my blog looks and don't have enough time (or don't want to invest the time) to learn how to make cool designs.
+This pattern is a common destroyer of productivity for many technologists. We wind up going to do one thing, like starting a blog, and end up creating a whole blogging platform. In utter exhaustion, we give up. No more!
 
-All I want to do is write. There is so much friction to just write; I don't need more.
+I'm trying to get better at strategically using my time more effectively to maximize the value I provide for myself and my clients.
 
-So I want to thank the [creator of this blog theme](https://github.com/ljvmiranda921) for making my life a bit less stressful.
+I'm not trying to work harder; I'm trying to get more meaningful work done. It's as simple as that.
+
+So I want to thank the [creator of this blog theme](https://github.com/ljvmiranda921) for making my life a bit less stressful and for helping me use my time to do more important things like write posts like this!
+
+Cheers!
 
