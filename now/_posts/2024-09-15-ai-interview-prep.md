@@ -58,6 +58,11 @@ While this example focuses on a software engineering role, the AI interview prep
 4. **Confidence Building**: Regular practice with positive feedback can boost your confidence for the real interview.
 5. **Flexibility**: Practice anytime, anywhere, without needing a human interviewer.
 
+## Actual Chat History
+
+![overview](/assets/png/ai-interview-prep/chat_history.png){:width="560px"}
+{: style="text-align: center;"}
+
 ## Conclusion
 
 By leveraging AI in your interview preparation, you're not just practicing – you're getting tailored, expert-level feedback that can significantly improve your performance. Give this method a try before your next interview and see the difference it can make in your confidence and readiness.
