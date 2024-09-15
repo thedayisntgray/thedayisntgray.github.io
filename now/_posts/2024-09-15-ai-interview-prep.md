@@ -7,6 +7,7 @@ comments: true
 author: "Landon Gray"
 published: true
 tags: [ai, interview, career, development]
+header-img: /assets/png/ai-interview-prep/header.png
 description: |
     A comprehensive guide on leveraging AI models like GPT-4 and Claude 3.5 to prepare for job interviews, including a real-world example and tips for success.
 ---
