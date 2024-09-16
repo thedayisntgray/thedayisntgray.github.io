@@ -28,6 +28,70 @@ layout: default
     </div>
   </div>
 
+  <style>
+    .subscription-container {
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+    .subscription-form {
+      display: flex;
+      flex-direction: column;
+    }
+    .subscription-form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    .subscription-form input[type="email"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    .subscription-form input[type="submit"] {
+      background-color: #4285f4;  /* Adjusted to match the blue in the image */
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .subscription-form input[type="submit"]:hover {
+      background-color: #3367d6;
+    }
+    .subscription-form p {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #6c757d;
+    }
+    .subscription-container h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+  </style>
+  
+  <div class="subscription-container">
+    <h3>Subscribe to Curious Centroid!</h3>
+    <p>Curious Centroid is an unapologetic exploration of curiosity where I share thoughts, ideas, and links that captivate me throughout the week.</p>
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/landon.gray"
+      method="post"
+      class="subscription-form"
+    >
+      <label for="bd-email">Email</label>
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" required />
+      <input type="hidden" value="1" name="embed" />
+      <input type="submit" value="Subscribe" />
+    </form>
+  </div>
+
   &nbsp;
 
   <hr>

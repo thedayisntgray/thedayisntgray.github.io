@@ -51,6 +51,8 @@ This feedback helps a candidate understand the strengths and weaknesses of their
 
 While this example focuses on a software engineering role, the AI interview prep method can be applied to a wide variety of job types and industries. Whether you're preparing for a role in marketing, finance, sales, or any other field, the process remains similar. If you'd like assistance in adapting this method for a different type of job posting, feel free to reach out for guidance.
 
+
+
 ## Benefits of This Method
 
 1. **Realistic Practice**: The questions generated are often very similar to those actually asked in interviews.
