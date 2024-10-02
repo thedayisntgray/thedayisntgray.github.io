@@ -23,4 +23,23 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  <!-- Disqus comments section -->
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = "{{ page.url | absolute_url }}";  // Replace with your page's canonical URL variable
+      this.page.identifier = "{{ page.id }}"; // Replace with your page's unique identifier variable
+    };
+
+    (function() {  // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://disqus_dtDyv8svQu.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  <!-- End Disqus comments section -->
+
 </article>
