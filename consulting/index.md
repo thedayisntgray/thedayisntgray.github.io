@@ -6,8 +6,19 @@ permalink: /consulting/
 ---
 # Building Strategic AI Solutions
 Hey 👋🏾,
-My name is Landon, and I'm the founder of Identus Consulting. I help teams turn big ideas into real products. I specialize in using Ruby; however, I can also support organizations in various languages, tools, or ecosystems to create smart, scalable, and effective AI-driven applications and solutions. 
-My focus is on developing MVPs and leading strategic initiatives that align with your business goals and propel you forward swiftly. Whether you're building a new MVP, needing help managing a recently launched project, or seeking to streamline existing operations, I'm here to build powerful solutions that grow with you.
+
+My name is Landon, and I'm the founder of Identus Consulting. I help teams turn big ideas into real products. 
+
+I specialize in **Ruby** development, but my expertise spans across multiple languages, tools, and ecosystems. This allows me to build **smart, scalable, and effective AI-driven applications** that fit your needs.
+
+Whether you're:
+
+- Building a new MVP
+- Managing a recently launched project
+- Streamlining your operations
+
+I'm here to deliver solutions that grow with you, aligning with your business goals and helping you move forward quickly.
+
 
 ## Services
 
@@ -22,5 +33,6 @@ My focus is on developing MVPs and leading strategic initiatives that align with
 ## Get in Touch
 Ready to discuss your project? [Email me](mailto:landon.gray@hey.com) to set up a free consultation. I'd love to learn more about your business and explore how I can help you achieve your goals with AI.
 I look forward to working with you!
-Landon Gray  
-Founder, Identus Consulting
+
+
+### - Landon Gray  
