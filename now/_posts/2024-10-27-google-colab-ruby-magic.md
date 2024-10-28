@@ -8,7 +8,8 @@ author: "Landon Gray"
 published: true
 tags: [ruby, python, google-colab, jupyter, ipython]
 description: |
-    Want to run Ruby in Google Colab? Learn how to use IPython magic commands to seamlessly integrate Ruby into your Jupyter notebooks, complete with code examples and implementation details.
+    Want to run Ruby in Google Colab? Learn how to use IPython magic commands to seamlessly integrate Ruby into your Google Colab
+ notebooks, complete with code examples and implementation details.
 ---
 
 ### TLDR: [Try It Out Here](https://colab.research.google.com/drive/1_qUuVGWzRzGBU7qquv0-biY-Esv3Yj89?usp=sharing) 📒
