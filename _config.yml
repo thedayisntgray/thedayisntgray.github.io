@@ -45,9 +45,9 @@ kramdown:
 # Highlighter settings
 highlighter: rouge
 
-# Disqus
-disqus:
- shortname: disqus_dtDyv8svQu
+# Disqus (disabled due to ads)
+# disqus:
+#  shortname: disqus_dtDyv8svQu
 
 # Google analytics
 # google_analytics: UA-xxxxxx-x
